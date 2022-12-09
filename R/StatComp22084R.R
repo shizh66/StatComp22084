@@ -196,7 +196,6 @@ z_generate<-function(x){
   p<-dim(x)[2]
   z<-matrix(0,n,p)
   for(j in 1:p){
-    init <- -beta[-j]/beta[j]
     f<-glmnet::glmnet(x[,-j],x[,j],nlambda = 100)  
     all_lmabda<-f$lambda
     all_beta<-f$beta

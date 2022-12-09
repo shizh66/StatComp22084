@@ -427,4 +427,3 @@ RLDPE<-function(x,y,m){
   return(list(beta_hat=beta_hat,sigma_hat=tao*sigma_init))
 }
 
-

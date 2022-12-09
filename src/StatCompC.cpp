@@ -14,7 +14,6 @@ using namespace Rcpp;
 //' plot(rnC[,2],type='l')
 //' }
 //' @export
-// [[Rcpp::export]]
 NumericMatrix gibbsC(int N, int thin) {
   NumericMatrix mat(N, 2);
   double x = 0, y = 0;
